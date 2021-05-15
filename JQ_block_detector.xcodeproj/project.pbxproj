@@ -16,6 +16,8 @@
 		AB2D2133264EAF250042399F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2D2132264EAF250042399F /* main.m */; };
 		AB2D213D264EAF250042399F /* JQ_block_detectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2D213C264EAF250042399F /* JQ_block_detectorTests.m */; };
 		AB2D2148264EAF250042399F /* JQ_block_detectorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2D2147264EAF250042399F /* JQ_block_detectorUITests.m */; };
+		AB2D215A264EAF4C0042399F /* JQ_block_detector.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2D2159264EAF4C0042399F /* JQ_block_detector.m */; };
+		AB2D2167264EC7EB0042399F /* BSBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2D2166264EC7EB0042399F /* BSBacktraceLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		AB2D2143264EAF250042399F /* JQ_block_detectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JQ_block_detectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2D2147264EAF250042399F /* JQ_block_detectorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQ_block_detectorUITests.m; sourceTree = "<group>"; };
 		AB2D2149264EAF250042399F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB2D2158264EAF4C0042399F /* JQ_block_detector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JQ_block_detector.h; sourceTree = "<group>"; };
+		AB2D2159264EAF4C0042399F /* JQ_block_detector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQ_block_detector.m; sourceTree = "<group>"; };
+		AB2D2165264EC7EB0042399F /* BSBacktraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBacktraceLogger.h; sourceTree = "<group>"; };
+		AB2D2166264EC7EB0042399F /* BSBacktraceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBacktraceLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,8 @@
 		AB2D211F264EAF230042399F /* JQ_block_detector */ = {
 			isa = PBXGroup;
 			children = (
+				AB2D2165264EC7EB0042399F /* BSBacktraceLogger.h */,
+				AB2D2166264EC7EB0042399F /* BSBacktraceLogger.m */,
 				AB2D2120264EAF230042399F /* AppDelegate.h */,
 				AB2D2121264EAF230042399F /* AppDelegate.m */,
 				AB2D2123264EAF230042399F /* SceneDelegate.h */,
@@ -115,6 +123,8 @@
 				AB2D212E264EAF250042399F /* LaunchScreen.storyboard */,
 				AB2D2131264EAF250042399F /* Info.plist */,
 				AB2D2132264EAF250042399F /* main.m */,
+				AB2D2158264EAF4C0042399F /* JQ_block_detector.h */,
+				AB2D2159264EAF4C0042399F /* JQ_block_detector.m */,
 			);
 			path = JQ_block_detector;
 			sourceTree = "<group>";
@@ -268,6 +278,8 @@
 			files = (
 				AB2D2128264EAF230042399F /* ViewController.m in Sources */,
 				AB2D2122264EAF230042399F /* AppDelegate.m in Sources */,
+				AB2D215A264EAF4C0042399F /* JQ_block_detector.m in Sources */,
+				AB2D2167264EC7EB0042399F /* BSBacktraceLogger.m in Sources */,
 				AB2D2133264EAF250042399F /* main.m in Sources */,
 				AB2D2125264EAF230042399F /* SceneDelegate.m in Sources */,
 			);

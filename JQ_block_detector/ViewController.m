@@ -6,8 +6,11 @@
 //
 
 #import "ViewController.h"
+#import "JQ_block_detector.h"
 
 @interface ViewController ()
+
+@property(nonatomic,strong) UIButton *actionButtn;
 
 @end
 
@@ -15,8 +18,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [[JQ_block_detector shareInstance] run];
+    self.actionButtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.actionButtn.frame = CGRectMake(0, 100, 200, 50);
+    [self.actionButtn setTitle:@"执行卡顿任务" forState:UIControlStateNormal];
+    [self.actionButtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.actionButtn addTarget:self action:@selector(blockTask) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.actionButtn];
 }
 
+-(void)blockTask{
+    sleep(2);
+}
 
 @end
